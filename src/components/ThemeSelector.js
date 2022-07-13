@@ -1,6 +1,6 @@
-import './ThemeSelector.css'
 import { useTheme } from '../hooks/useTheme'
 import modeIcon from '../image/mode-icon.svg'
+import './ThemeSelector.css'
 
 const colors = ['red', 'yellow', 'blue']
 

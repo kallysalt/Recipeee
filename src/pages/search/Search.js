@@ -1,10 +1,9 @@
 import { useLocation } from 'react-router-dom'
-
 import { useFetch } from '../../hooks/useFetch'
 import RecipeList from '../../components/RecipeList'
 
 export default function Search() {
-
+  
   const queryString = useLocation().search
   const queryParams = new URLSearchParams(queryString)
   const query = queryParams.get('q')

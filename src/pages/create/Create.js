@@ -1,11 +1,9 @@
 import { useState, useRef, useEffect } from 'react'
-
-import './Create.css'
 import { useFetch } from '../../hooks/useFetch'
 import { useHistory } from 'react-router-dom'
+import './Create.css'
 
 export default function Create() {
-
   const [title, setTitle] = useState('')
   const [method, setMethod] = useState('')
   const [cookingTime, setCookingTime] = useState('')
@@ -20,7 +18,7 @@ export default function Create() {
     e.preventDefault()
     postData({title, ingredients, method, cookingTime: cookingTime+' minutes'})
   }
-
+  
   const addHandler = (e) => {
     e.preventDefault()
     const ing = newIngredient.trim()

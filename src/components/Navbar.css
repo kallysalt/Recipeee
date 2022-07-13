@@ -1,5 +1,4 @@
 .navbar {
-    background: #fed300;
     padding: 10px;
     color: white;
   }
@@ -23,6 +22,6 @@
     border-radius: 4px;
   }
   .navbar a:last-child:hover {
-    background: #fff;
-    color: #333;
+    background: white;
+    color: black;
   }

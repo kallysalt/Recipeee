@@ -1,7 +1,6 @@
 import {useState, useEffect} from 'react';
 
-export const useFetch = (url, method = "GET") => {
-
+export const useFetch = (url, method = 'GET') => {
     const [data,setData] = useState(null)
     const [isLoading, setisLoading] = useState(false)
     const [error, setError] = useState(null)
@@ -9,14 +8,13 @@ export const useFetch = (url, method = "GET") => {
 
     const postData = (postData) => {
         setOptions({
-            method: "POST",
+            method: 'POST',
             headers: {
-                "Content-Type": "application/json"
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(postData) // turn js object into a json string for posting
         })
     }
-
     useEffect(() => {
         const controller = new AbortController()
         const fetchData = async(fetchOptions) => {
@@ -32,19 +30,19 @@ export const useFetch = (url, method = "GET") => {
                 setError(null)
             }
             catch (e) {
-                if (e.name === "AbortError") {
-                    console.log("the fetch was aborted")
+                if (e.name === 'AbortError') {
+                    console.log('the fetch was aborted')
                 }
                 else {
                     setisLoading(false)
-                    setError("failed to fetch the data")
+                    setError('failed to fetch the data')
                 }
             }
         }
         if (method === 'GET') {
             fetchData()
         }
-        if (method === "POST" && options) {
+        if (method === 'POST' && options) {
             fetchData(options)
         }
         return () => {controller.abort()}
