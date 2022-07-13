@@ -5,7 +5,7 @@ html, body, #root {
   height: 100%;
 }
 body {
-  font-family: Raleway, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   font-size: 1.4em;
   background: #dfdfdf;
@@ -33,4 +33,7 @@ input, textarea {
 .loading, .error {
   text-align: center;
   margin: 40px auto;
+}
+.dark .page-title, .dark .loading, .dark .error, .dark label, .dark p {
+  color: #e4e4e4;
 }
