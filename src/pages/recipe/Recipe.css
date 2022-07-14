@@ -5,29 +5,46 @@
     background: #fff;
     padding: 40px;
     box-sizing: border-box;
-  }
-  .recipe ul {
+}
+
+.recipe .prep {
+    color: rgb(255, 130, 80);
+}
+
+.recipe h2 {
+    padding: 20px;
+}
+
+.recipe ul {
     display: flex;
     padding: 0;
     justify-content: center;
     margin-top: 0;
-  }
-  .recipe li {
+}
+
+.recipe li {
     list-style-type: none;
     margin-right: 10px;
-    color: #777;
-  }
-  .recipe li::after {
+}
+
+.recipe li::after {
     content: ",";
-  }
-  .recipe li:last-child::after {
+}
+
+.recipe li:last-child::after {
     content: ".";
-  }
-  .method {
+}
+
+.method {
     text-align: left;
     line-height: 1.5em;
-  }
-  .recipe.dark {
+}
+
+.recipe.dark {
     background: #555;
     color: #e4e4e4;
-  }
+}
+
+.recipe.dark .prep {
+    color: rgb(255, 200, 0);
+}

@@ -5,7 +5,7 @@ import { useFetch } from '../../hooks/useFetch'
 import { useTheme } from '../../hooks/useTheme'
 
 export default function Recipe() {
-  
+
   const {id} = useParams()
   const url = 'http://localhost:3000/recipes/' + id
   const {error, isLoading, data} = useFetch(url)
@@ -17,11 +17,12 @@ export default function Recipe() {
       {isLoading && <p className='loading'>Loading...</p>}
       {data && (
         <>
-        <h2 className='page-title'>{data.title}</h2>
-        <p>Takes {data.cookingTime} to cook.</p>
-        <ul>
+        <h2>{data.title}</h2>
+        <p className='prep'>Takes {data.cookingTime} to cook.</p>
+        <ul className='prep'>
           {data.ingredients.map(i => <li key={i}>{i}</li>)}
         </ul>
+        <p className="method">{data.method}</p>
         </>
       )}
     </div>

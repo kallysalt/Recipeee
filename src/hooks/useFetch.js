@@ -1,7 +1,7 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 export const useFetch = (url, method = 'GET') => {
-    const [data,setData] = useState(null)
+    const [data, setData] = useState(null)
     const [isLoading, setisLoading] = useState(false)
     const [error, setError] = useState(null)
     const [options, setOptions] = useState(null)
@@ -17,10 +17,10 @@ export const useFetch = (url, method = 'GET') => {
     }
     useEffect(() => {
         const controller = new AbortController()
-        const fetchData = async(fetchOptions) => {
+        const fetchData = async (fetchOptions) => {
             setisLoading(true)
             try {
-                const res = await fetch(url, {...fetchOptions, signal: controller.signal})
+                const res = await fetch(url, { ...fetchOptions, signal: controller.signal })
                 if (!res.ok) {
                     throw new Error(res.statusText)
                 }
@@ -45,8 +45,8 @@ export const useFetch = (url, method = 'GET') => {
         if (method === 'POST' && options) {
             fetchData(options)
         }
-        return () => {controller.abort()}
+        return () => { controller.abort() }
     }, [url, method, options])
-    
-    return {data, isLoading, error, postData}
+
+    return { data, isLoading, error, postData }
 }

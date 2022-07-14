@@ -1,0 +1,7 @@
+.search-result h3 {
+    padding-left: 10px;
+    color: red;
+}
+.search-result.dark h3 {
+    color: rgb(200, 200, 200);
+}

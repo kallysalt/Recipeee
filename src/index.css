@@ -1,38 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400&display=swap');
 
 html, body, #root {
   height: 100%;
 }
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Slab', serif;
   margin: 0;
-  font-size: 1.4em;
-  background: #dfdfdf;
-  color: #333;
+  font-size: 1.2em;
+  background: rgb(220, 220, 220);
+  color: black;
 }
-h1,h2,h3,p {
+
+h1, h2, h3, p {
   margin: 0;
 }
+
 input, textarea {
-  color: #333;
-  padding: 8px;
+  color: black;
+  padding: 6px;
   font-size: 1em;
   border-radius: 4px;
-  border: 1px solid #d4d4d4;
-  background-color: #fff;
+  border: 1px solid black;
+  background-color: white;
   display: block;
   width: 100%;
   box-sizing: border-box;
 }
+
 .page-title {
   text-align: center;
   margin: 40px auto;
-  color: #333;
+  color: black;
 }
+
 .loading, .error {
   text-align: center;
   margin: 40px auto;
 }
-.dark .page-title, .dark .loading, .dark .error, .dark label, .dark p {
-  color: #e4e4e4;
+
+.dark .loading,
+.dark .error 
+.dark p {
+  color: rgb(220, 220, 220);;
 }
