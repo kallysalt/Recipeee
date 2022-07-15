@@ -1,7 +1,12 @@
 .search-result h3 {
     padding-left: 10px;
-    color: red;
+    color: black;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .search-result.dark h3 {
     color: rgb(200, 200, 200);
 }
+
+    
