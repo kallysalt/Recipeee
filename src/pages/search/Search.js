@@ -9,7 +9,7 @@ export default function Search() {
   const queryString = useLocation().search
   const queryParams = new URLSearchParams(queryString)
   const query = queryParams.get('q')
-  const url = 'http://localhost:3000/recipes?q=' + query
+  const url = 'https://master.d31x3c27bxn7jr.amplifyapp.com/recipes?q=' + query
   const{error, isLoading, data} = useFetch(url)
   const {mode} = useTheme()
 
