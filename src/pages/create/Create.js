@@ -12,13 +12,13 @@ export default function Create() {
   
   const ingredientInput = useRef(null)
   const history = useHistory()
-  const {postData, data, error} = useFetch('http://localhost:3000/recipes','POST')
+  const {postData, data, error} = useFetch('https://master.d31x3c27bxn7jr.amplifyapp.com/recipes','POST')
   
   const submitHandler = (e) => {
     e.preventDefault()
     postData({title, ingredients, method, cookingTime: cookingTime+' minutes'})
   }
-  
+
   const addHandler = (e) => {
     e.preventDefault()
     const ing = newIngredient.trim()
