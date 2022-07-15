@@ -1,0 +1,15 @@
+{
+  "readOnly": false,
+  "enableApiKeyAuth": false,
+  "jsonFile": "/Users/zhubozhou/Documents/github/recipeee/data/db.json",
+  "enableJSONValidation": true,
+  "enableSwagger": true,
+  "logLevel": "info",
+  "stackName": "recipes",
+  "routes": {
+    "apiRoutePath": "/api",
+    "swaggerUIRoutePath": "/ui",
+    "swaggerSpecRoutePath": "/api-spec",
+    "graphqlRoutePath": "/graphql"
+  }
+}
