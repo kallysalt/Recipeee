@@ -7,8 +7,8 @@ An aesthetic web app that allows users to search and create recipes.
 - Built with ReactJS (hooks, router, context, etc.)
 - Deployed with Heroku (json-server) and AWS (web-app)
 
-### <a href="master.d31x3c27bxn7jr.amplifyapp.com/">click me!</a>
-
 ![](./src/images/day.png)
 
 ![](./src/images/night.png)
+
+### <a href="master.d31x3c27bxn7jr.amplifyapp.com/">click me!</a>
