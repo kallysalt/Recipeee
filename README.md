@@ -10,3 +10,5 @@ An aesthetic web app that allows users to search and create recipes.
 ![](./src/images/day.png)
 
 ![](./src/images/night.png)
+
+### View it now: <a href="master.d31x3c27bxn7jr.amplifyapp.com/">click me!</a>
