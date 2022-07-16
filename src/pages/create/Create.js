@@ -12,7 +12,7 @@ export default function Create() {
   
   const ingredientInput = useRef(null)
   const history = useHistory()
-  const {postData, data, error} = useFetch('https://master.d31x3c27bxn7jr.amplifyapp.com/recipes','POST')
+  const {postData, data, error} = useFetch('https://new-recipe-server.herokuapp.com/recipes','POST')
   
   const submitHandler = (e) => {
     e.preventDefault()

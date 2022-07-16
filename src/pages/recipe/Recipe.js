@@ -7,7 +7,7 @@ import { useTheme } from '../../hooks/useTheme'
 export default function Recipe() {
 
   const {id} = useParams()
-  const url = 'https://master.d31x3c27bxn7jr.amplifyapp.com/recipes/' + id
+  const url = 'https://new-recipe-server.herokuapp.com/recipes/' + id
   const {error, isLoading, data} = useFetch(url)
   const {mode} = useTheme()
   
