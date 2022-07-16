@@ -50,3 +50,4 @@ export const useFetch = (url, method = 'GET') => {
 
     return { data, isLoading, error, postData }
 }
+

@@ -51,7 +51,7 @@
   margin: 20px auto 0;
 }
 
-.error{
+.error {
   color: black;
 }
 
@@ -64,8 +64,7 @@
 }
 
 .recipe-list .card.dark h3,
-.recipe-list .card.dark div
-{
+.recipe-list .card.dark div {
   color: rgb(220, 220, 220);
 }
 
@@ -76,5 +75,3 @@
 .error.dark {
   color: rgb(200, 200, 200);
 }
-
-
