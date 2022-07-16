@@ -44,3 +44,7 @@ input, textarea {
 .dark p {
   color: rgb(220, 220, 220);;
 }
+
+.page-title .dark {
+  color: white;
+}

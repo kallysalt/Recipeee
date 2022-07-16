@@ -1,5 +1,5 @@
 .create {
-  color: #555;
+  color: black;
   max-width: 480px;
   margin: 60px auto;
 }
@@ -18,11 +18,11 @@
   display: block;
   width: 100px;
   font-size: 1em;
-  color: #fff;
+  color: black;
   padding: 8px 20px;
   border: 0;
   border-radius: 4px;
-  background-color: #58249c;
+  background-color: rgb(255, 200, 0);
   cursor: pointer;
   text-decoration: none;
   margin: 20px auto;
@@ -35,4 +35,8 @@
 
 .ingredients button {
   margin: 0 0 0 10px;
+}
+
+.create.dark, .create.dark .page-title {
+  color: rgb(220, 220, 220);
 }
